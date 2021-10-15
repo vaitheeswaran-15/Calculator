@@ -1,0 +1,47 @@
+.nav-item{
+    margin: 10px;
+    padding: 10px;
+}
+.navbar-brand img{
+    margin: 10px;
+    padding:10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+}
+.navbar{
+    margin: 10px;
+    padding:10px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+}
+img{
+    border-radius: 50%;
+}
+.nav-item:hover{
+    text-decoration: underline;
+}
+.btn{
+    font-size: 20px;
+    height: 200px;
+    width: 200px;
+}
+.btn:hover{
+    font-weight: bold;
+    background-color: cornflowerblue;
+}
+@media screen and (max-width:700px){
+    table{
+        height:300px;
+        width:100px;
+    }
+    .btn{
+        font-size: 10px;
+        height: 70px;
+        width: 70px;
+    }
+    
+}
+.first{
+    background-color: gray;
+    padding:10px;
+}

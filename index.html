@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Site</title>
+</head>
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+         <img src="https://media.istockphoto.com/vectors/calculator-vector-id531633071?k=20&m=531633071&s=612x612&w=0&h=mEZntyKX_pFEupTpZLV9-asMCkGJk-uA8L0PUEpG-BQ=" alt="" height="80" width="80">Calculator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:arivazhakan2002@gmail.com">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home" class="first">
+        <center>
+          <form action="">
+            <table height="100" width="100" border="2px">
+              <tr>
+                <td><input type="text" name="" id="val1" class="btn" placeholder="value1" title="enter the value"></td>
+                <td><input type="text" name="" id="op"   class="btn" placeholder="enter the operator" title="enter operator"></td>
+                <td><input type="text" name="" id="val2" class="btn" placeholder="value2" title="enter the value"></td>
+                <td><input type="text" name="" id="res" class="btn" placeholder="result"></td>
+              </tr>
+              <tr>
+                <td colspan="2" align="center"><input type="button" name="" id="submit" value="=" class="btn" onclick="myfunction()"></td>
+                <td colspan="2" align="center"><input type="reset" value="C" class="btn"></td>
+              </tr>
+            </table>
+          </form>
+        
+        </center>
+    </div>
+    <center>
+      <footer id="contact">
+      Developed by Seeni Arivazhakan & Vaitheeswaran.L.M<br>
+      Follow Us
+      <button><a href="https://www.instagram.com/seeni_arivazhakan?r=nametag">Seeni Arivazhakan</a></button>
+      <button><a href="https://www.instagram.com/vaitheeswaran_15/?r=nametag">Vaitheeswaran.L.M</a></button>
+
+      <a href=""></a>
+    </footer></center>
+    <script>
+        function myfunction(){
+          var choice=document.getElementById("op").value;
+          if(document.getElementById("val1").value=="" &&  document.getElementById("val2").value==""){
+            alert("Enter the Value")
+          }
+          switch(choice){
+            case "+":
+              a=document.getElementById("val1").value;
+              b=document.getElementById("val2").value;
+              c=eval(a)+eval(b);
+              document.getElementById("res").value=c;
+              break;
+            case "-":
+              a=document.getElementById("val1").value;
+              b=document.getElementById("val2").value;
+              c=eval(a)-eval(b);
+              document.getElementById("res").value=c;
+              break;
+            case "x":
+              a=document.getElementById("val1").value;
+              b=document.getElementById("val2").value;
+              c=eval(a)*eval(b);
+              document.getElementById("res").value=c;
+              break;
+            case "/":
+              a=document.getElementById("val1").value;
+              b=document.getElementById("val2").value;
+              c=eval(a)/eval(b);
+              document.getElementById("res").value=c;
+              break;
+            default:
+              alert("Enter the valid operator")
+          }
+        }
+      </script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>   
+    </body>
+</html>
